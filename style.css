@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Dosis:wght@200&family=Rajdhani:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --oqrang: #fff;
+    --qorarang: #000;
+    --havorang: #0e4eff;
+}
+.tun{
+    --oqrang: #000;
+    --qorarang: #fff;
+}
+body{
+    font-family: 'Assistant', sans-serif;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    display: flex;
+    background: var(--oqrang);
+    justify-content: space-between;
+    padding: 40px;
+}
+header .htext .logo h2{
+    font-size: 45px;
+    color: var(--qorarang);
+    margin-top: -25px;
+    cursor: pointer;
+}
+header .htext .logo h2 span{
+    color: var(--havorang);
+}
+header .hmenu .link .hlink{
+    display: flex;
+    margin-right: 30px;
+}
+header .hmenu .link .hlink ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+header .hmenu .link .hlink ul li a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    color: var(--qorarang);
+}
+header .hmenu .link .hlink ul li a:hover{
+    color: var(--havorang);
+    border-bottom: 1px solid var(--havorang);
+}
+header .hmenu .link .hlink .dropdown button{
+    width: 120px;
+    padding: 10px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 800;
+    border: 1px solid var(--havorang);
+    font-size: 18px;
+    outline: none;
+    background: none;
+    color: var(--havorang);
+    margin-top: -20px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.hmenu .link .hlink .dropdown{
+    position: relative;
+    display: inline-block;
+}
+.hmenu .link .hlink .dropdown button:hover{
+    background: var(--havorang);
+    color: var(--oqrang);
+    transition: 0.4s ease;
+}
+.hmenu .link .dropdown .dropa{
+    position: absolute;
+    z-index: 1;
+    top: 32px;
+    left: -50px;
+    width: 250px;
+    display: none;
+    height: 130px;
+    border-radius: 6px;
+    transition: 0.4s ease;
+    background: rgb(245, 245, 245);
+}
+.hmenu .link .dropdown:hover .dropa{
+    display: block;
+    transition: 0.4s ease;
+}
+.hmenu .link .dropdown .dropa h3{
+    cursor: pointer;
+    padding-top: 10px;
+    text-align: center;
+}
+.hmenu .link .dropdown .dropa h3 span{
+    color: #0e4eff;
+}
+.hmenu .link .dropdown .dropa .hadmin{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.hmenu .link .dropdown .dropa .hadmin .hansw span{
+    font-weight: 900;
+    font-size: 14px;
+}
+.hmenu .link .dropdown .dropa .hsocial{
+    text-align: center;
+}
+.hmenu .link .dropdown .dropa .hsocial .fa{
+    font-size: 20px;
+    width: 40px;
+    padding: 9px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hmenu .link .dropdown .dropa .hsocial #facebook{
+    background: rgb(0, 102, 255);
+    color: white;
+}
+.hmenu .link .dropdown .dropa .hsocial #instagram{
+    background: rgb(255, 17, 0);
+    color: white;
+}
+.hmenu .link .dropdown .dropa .hsocial #google{
+    background: rgb(255, 123, 0);
+    color: white;
+}
+.hmenu .link .dropdown .dropa .hsocial #telegram{
+    background: rgb(24, 116, 255);
+    color: white;
+}
+.hmenu .hicon .fa{
+    font-size: 30px;
+    color: #0e4eff;
+    cursor: pointer;
+    margin: -4px 25px;
+    transition: 0.4s ease-in-out;
+}
+.hmenu .hicon .fa:hover{
+    transform: rotate(160deg);
+    transition: 0.4s ease-in-out;
+}
+.bgimg{
+    width: 1005;
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(img/aaaa.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+::-webkit-scrollbar{
+    width: 4px;
+}
+::-webkit-scrollbar-thumb{
+    background: #0e4eff;
+}
+header .hicon .sozmode{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    right: 35px;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0;
+    text-align: center;
+    background: rgb(109, 109, 109);
+}
+header .hicon:hover .sozmode{
+    opacity: 1;
+}
+header .hicon .sozmode img{
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+.hblock{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: var(--oqrang);
+    flex-direction: row;
+    flex-flow: wrap;
+}
+.hblock .bblock{
+    width: 330px;
+    height: 200px;
+    
+    border-radius: 6px;
+    background: rgb(245, 245, 245);
+}
+.hblock .bblock .bimg{
+    text-align: center;
+    padding: 15px;
+}
+.hblock .bblock .binfo{
+    text-align: center;
+}
+.hblock .bblock .binfo h3{
+    font-family: bahnschrift;
+}
+.hblock .bblock .binfo p{
+    font-family: bahnschrift;
+    font-weight: 100;
+    padding: 5px;
+}
+
+
+@media screen and (max-width:1390px){
+    .hblock .bblock{
+        width: 40%;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:777px){
+    .hblock .bblock{
+        width: 90%;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:1070px){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.help{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding:10px;
+    margin: 20px;
+    z-index: 1;
+    border-radius: 50%;
+    position: fixed;
+}
+.help img{
+    cursor: pointer;
+    animation: help 1s ease-in-out infinite alternate;
+}
+@keyframes help{
+    0%{
+        transform: scale(0.9);
+    }100%{
+        transform: scale(1);
+    }
+}
